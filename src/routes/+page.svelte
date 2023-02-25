@@ -156,7 +156,7 @@
     {#if contactInView}
         <div class="flex flex-col m-4 w-3/4 max-md:flex-col" in:fade={{ duration: 3000, easing: sineInOut }}>
             <h2 class="text-4xl underline decoration-blue-500 text-center mb-8">Kapcsolat</h2>
-            <div class="flex justify-between p-4 mb-4 bg-gray-50 shadow-sm rounded-md">
+            <div class="flex justify-between p-4 mb-4 gap-2 bg-gray-50 shadow-sm rounded-md">
                 <div class="flex gap-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -176,9 +176,10 @@
                     </svg>
                     <p class="font-medium">Email</p>
                 </div>
-                <a href="mailto:katticka@gmail.com" class="text-blue-500 underline">katticka@gmail.com</a>
+                <a href="mailto:katticka@gmail.com" class="text-blue-500 underline truncate block">katticka@gmail.com</a
+                >
             </div>
-            <div class="flex justify-between p-4 mb-4 bg-gray-50 shadow-sm rounded-md">
+            <div class="flex justify-between p-4 mb-4 gap-2 bg-gray-50 shadow-sm rounded-md">
                 <div class="flex gap-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -199,9 +200,9 @@
                     </svg>
                     <p class="font-medium">Telefon</p>
                 </div>
-                <a href="tel:+36202636776" class="text-blue-500 underline">+36 20 263 6776</a>
+                <a href="tel:+36202636776" class="text-blue-500 underline truncate block">+36 20 263 6776</a>
             </div>
-            <div class="flex justify-between p-4 mb-4 bg-gray-50 shadow-sm rounded-md">
+            <div class="flex justify-between gap-2 p-4 mb-4 bg-gray-50 shadow-sm rounded-md">
                 <div class="flex gap-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +222,12 @@
                     </svg>
                     <p class="font-medium">Cím</p>
                 </div>
-                <a href="https://goo.gl/maps/BYYd15k9dCtmVwLn7" target="_blank" class="text-blue-500 underline">
+                <a
+                    href="https://goo.gl/maps/BYYd15k9dCtmVwLn7"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-blue-500 underline truncate block"
+                >
                     6000, Kecskemét, Alpár u. 7.
                 </a>
             </div>
