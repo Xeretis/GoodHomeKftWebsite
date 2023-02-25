@@ -12,10 +12,16 @@ specifiers:
   postcss: ^8.4.21
   svelte: ^3.54.0
   svelte-check: ^3.0.1
+  svelte-countup: ^0.2.6
+  svelte-inview: ^3.0.2
   tailwindcss: ^3.2.7
   tslib: ^2.4.1
   typescript: ^4.9.3
   vite: ^4.0.0
+
+dependencies:
+  svelte-countup: 0.2.6_svelte@3.55.1
+  svelte-inview: 3.0.2_svelte@3.55.1
 
 devDependencies:
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.8.4
@@ -1364,7 +1370,6 @@ packages:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
   /natural-compare-lite/1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
@@ -1764,6 +1769,15 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-countup/0.2.6_svelte@3.55.1:
+    resolution: {integrity: sha512-n1jlDN/55O0w3+RTbCCwq02vvyw4DZIL+IcQht/CuZRq/VGceyADYGrH3ANG5U+P8HMqnIWnCn7xiIF7AxUqaA==}
+    dependencies:
+      nanoid: 3.3.4
+      svelte-inview: 3.0.2_svelte@3.55.1
+    transitivePeerDependencies:
+      - svelte
+    dev: false
+
   /svelte-hmr/0.15.1_svelte@3.55.1:
     resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -1772,6 +1786,14 @@ packages:
     dependencies:
       svelte: 3.55.1
     dev: true
+
+  /svelte-inview/3.0.2_svelte@3.55.1:
+    resolution: {integrity: sha512-QdMGe8oE/dsoqbQHppeNgz9zK0Ahir+RYDqw5JwKJcbdzLOkgPGp0Dzt8c9PIdEQXoJD+piOeMGdQGrCmlyMag==}
+    peerDependencies:
+      svelte: ^3.0.0
+    dependencies:
+      svelte: 3.55.1
+    dev: false
 
   /svelte-preprocess/5.0.1_k4bhxdknaltjvjwprbm23edr5q:
     resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
@@ -1825,7 +1847,6 @@ packages:
   /svelte/3.55.1:
     resolution: {integrity: sha512-S+87/P0Ve67HxKkEV23iCdAh/SX1xiSfjF1HOglno/YTbSTW7RniICMCofWGdJJbdjw3S+0PfFb1JtGfTXE0oQ==}
     engines: {node: '>= 8'}
-    dev: true
 
   /tailwindcss/3.2.7_postcss@8.4.21:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}

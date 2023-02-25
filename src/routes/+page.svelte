@@ -1,20 +1,26 @@
 <script>
     import { draw, fade, fly } from "svelte/transition";
-    import { quintOut } from "svelte/easing";
+    import { quintOut, sineInOut } from "svelte/easing";
     import { onMount } from "svelte";
+    import { inview } from "svelte-inview";
+    import Countup from "svelte-countup";
     import handhakeImg from "$lib/assets/handshake.jpg";
     import houseBlockImg from "$lib/assets/houseblock.jpg";
+    import aboutimage from "$lib/assets/aboutimage.jpg";
 
     let drawLanding = false;
 
     onMount(() => {
         drawLanding = true;
     });
+
+    let aboutInView;
 </script>
 
 <div class="flex justify-center items-center flex-col h-screen relative">
     <div class="w-[75vw]">
         <svg viewBox="0 0 1217 113" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>GOODHOME KFT</title>
             <mask
                 id="path-1-outside-1_3_9"
                 maskUnits="userSpaceOnUse"
@@ -144,7 +150,7 @@
             Közösképviselés és könyvelés már x éve Kecskeméten
         </p>
         <div class="flex gap-4 pt-4" transition:fly={{ duration: 2500, delay: 2200, y: 20 }}>
-            <a href="#_" class="relative inline-block text-lg group">
+            <a href="#about" class="relative inline-block text-lg group">
                 <span
                     class="relative z-10 block px-3 py-2 sm:px-5 sm:py-3 overflow-hidden leading-tight text-blue-500 transition-colors duration-300 ease-out border-[1px] sm:border-2 border-blue-500 rounded-lg group-hover:text-white"
                 >
@@ -205,12 +211,86 @@
         />
     {/if}
 </div>
-
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, repudiandae repellat! Commodi vero blanditiis
-    accusamus perferendis debitis ducimus deleniti, facilis, quo repellendus tempore corporis! Est nemo iure nisi ipsa
-    dolores!
-</p>
+<section
+    class="flex min-h-screen justify-center items-center flex-col relative"
+    id="about"
+    use:inview={{ unobserveOnEnter: true, rootMargin: "-20%" }}
+    on:change={({ detail }) => {
+        aboutInView = detail.inView;
+    }}
+>
+    {#if aboutInView}
+        <div class="flex gap-4 m-4 w-3/4 max-md:flex-col" in:fade={{ duration: 3000, easing: sineInOut }}>
+            <img src={aboutimage} alt="About us" class="w-64 h-96 rounded-lg max-md:hidden" />
+            <div class="flex flex-col gap-4">
+                <h2 class="text-3xl underline decoration-blue-500 mb-2 max-md:text-center">Rólunk</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum dolores ab, modi
+                    possimus illo fugit, necessitatibus odit saepe, hic ad ducimus! In at praesentium repellendus minima
+                    quis aut delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis qui fugit
+                    necessitatibus voluptatibus repudiandae mollitia quos alias, non praesentium ipsa illo rem labore
+                    amet earum vel optio ut corporis!
+                </p>
+                <div class="flex gap-4 lg:mt-6 md:h-full md:items-center">
+                    <div class="flex flex-1 flex-col p-2">
+                        <div class="w-8 h-8 sm:w-12 sm:h-12 self-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="#3b82f6"
+                                preserveAspectRatio="xMinYMin meet"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 21l18 0" />
+                                <path d="M9 8l1 0" />
+                                <path d="M9 12l1 0" />
+                                <path d="M9 16l1 0" />
+                                <path d="M14 8l1 0" />
+                                <path d="M14 12l1 0" />
+                                <path d="M14 16l1 0" />
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                            </svg>
+                        </div>
+                        <p class="p-2 text-center">
+                            <span class="text-blue-500 font-bold">
+                                <Countup value={30} />+
+                            </span> társasház
+                        </p>
+                    </div>
+                    <div class="flex flex-1 flex-col p-2">
+                        <div class="w-8 h-8 sm:w-12 sm:h-12 self-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMinYMin meet"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="#3b82f6"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                            </svg>
+                        </div>
+                        <p class="p-2 text-center">
+                            <span class="text-blue-500 font-bold">
+                                <Countup value={600} />+
+                            </span> elégedett lakó
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {/if}
+</section>
 
 <style>
     .dottedBg {
