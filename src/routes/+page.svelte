@@ -2,8 +2,8 @@
     import { draw, fade, fly } from "svelte/transition";
     import { quintOut } from "svelte/easing";
     import { onMount } from "svelte";
-    import handhakeImg from "$lib/assets/handShake.jpg";
-    import houseBlockImg from "$lib/assets/houseBlock.jpg";
+    import handhakeImg from "$lib/assets/handshake.jpg";
+    import houseBlockImg from "$lib/assets/houseblock.jpg";
 
     let drawLanding = false;
 
