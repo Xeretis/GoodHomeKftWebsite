@@ -176,7 +176,7 @@
                     </svg>
                     <p class="font-medium">Email</p>
                 </div>
-                <a href="#" class="text-blue-500 underline">katticka@gmail.com</a>
+                <a href="mailto:katticka@gmail.com" class="text-blue-500 underline">katticka@gmail.com</a>
             </div>
             <div class="flex justify-between p-4 mb-4 bg-gray-50 shadow-sm rounded-md">
                 <div class="flex gap-2">
@@ -199,7 +199,7 @@
                     </svg>
                     <p class="font-medium">Telefon</p>
                 </div>
-                <a href="#" class="text-blue-500 underline">+36 20 263 6776</a>
+                <a href="tel:+36202636776" class="text-blue-500 underline">+36 20 263 6776</a>
             </div>
             <div class="flex justify-between p-4 mb-4 bg-gray-50 shadow-sm rounded-md">
                 <div class="flex gap-2">
@@ -221,7 +221,9 @@
                     </svg>
                     <p class="font-medium">Cím</p>
                 </div>
-                <a href="#" class="text-blue-500 underline">6000, Kecskemét, Alpár u. 7.</a>
+                <a href="https://goo.gl/maps/BYYd15k9dCtmVwLn7" target="_blank" class="text-blue-500 underline">
+                    6000, Kecskemét, Alpár u. 7.
+                </a>
             </div>
             <div class="flex justify-center">
                 <LinkButton href="#landing" text="Vissza az oldal tetejére" />
