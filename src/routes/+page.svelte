@@ -20,7 +20,7 @@
     let contactInView;
 </script>
 
-<section class="flex justify-center items-center flex-col h-screen relative" id="landing">
+<section class="flex justify-center items-center flex-col h-screen relative" id="landing" role="banner">
     {#if drawLanding}
         <SvgTitle />
         <p
@@ -66,6 +66,7 @@
 <section
     class="flex min-h-screen justify-center items-center flex-col relative"
     id="about"
+    role="article"
     use:inview={{ unobserveOnEnter: true, rootMargin: "-20%" }}
     on:change={({ detail }) => {
         aboutInView = detail.inView;
@@ -148,6 +149,7 @@
 <section
     class="flex min-h-screen justify-center items-center flex-col relative"
     id="contact"
+    role="article"
     use:inview={{ unobserveOnEnter: true, rootMargin: "-20%" }}
     on:change={({ detail }) => {
         contactInView = detail.inView;
@@ -240,6 +242,7 @@
             target="_blank"
             rel="noreferrer"
             class="absolute bottom-5 right-5"
+            aria-label="Forrás kód megtekintése GitHubon"
             in:fade={{ duration: 3000, easing: sineInOut }}
         >
             <svg

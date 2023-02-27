@@ -5,6 +5,8 @@
 </script>
 
 <div class="w-[75vw]">
+    <!-- svelte-ignore a11y-hidden -->
+    <h1 class="hidden" aria-hidden="false">GOODHOME KFT</h1>
     <svg viewBox="0 0 1217 113" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
         <title>GOODHOME KFT</title>
         <mask
