@@ -73,10 +73,10 @@
     }}
 >
     {#if aboutInView}
-        <div class="flex gap-4 m-4 w-3/4 max-md:flex-col" in:fade={{ duration: 3000, easing: sineInOut }}>
+        <div class="flex gap-6 m-4 w-3/4 max-md:flex-col" in:fade={{ duration: 3000, easing: sineInOut }}>
             <img src={aboutimage} alt="About us" class="w-64 h-96 rounded-lg max-md:hidden" />
             <div class="flex flex-col gap-4">
-                <h2 class="text-4xl underline decoration-blue-500 mb-2 max-md:text-center">Rólunk</h2>
+                <h2 class="text-4xl underline decoration-blue-500 max-md:text-center">Rólunk</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum dolores ab, modi
                     possimus illo fugit, necessitatibus odit saepe, hic ad ducimus! In at praesentium repellendus minima
