@@ -30,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/amp": "^1.0.2",
+		"@vercel/analytics": "^0.1.11",
 		"svelte-countup": "^0.2.6",
 		"svelte-inview": "^3.0.4"
 	}

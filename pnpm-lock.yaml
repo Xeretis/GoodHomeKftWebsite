@@ -7,6 +7,7 @@ specifiers:
   '@tailwindcss/typography': ^0.5.9
   '@typescript-eslint/eslint-plugin': ^5.54.0
   '@typescript-eslint/parser': ^5.54.0
+  '@vercel/analytics': ^0.1.11
   autoprefixer: ^10.4.13
   eslint: ^8.35.0
   eslint-plugin-svelte3: ^4.0.0
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   '@sveltejs/amp': 1.0.2_@sveltejs+kit@1.9.2
+  '@vercel/analytics': 0.1.11
   svelte-countup: 0.2.6_svelte@3.55.1
   svelte-inview: 3.0.4_svelte@3.55.1
 
@@ -559,6 +561,12 @@ packages:
       '@typescript-eslint/types': 5.54.0
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@vercel/analytics/0.1.11:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dev: false
 
   /@vercel/nft/0.22.6:
     resolution: {integrity: sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==}
