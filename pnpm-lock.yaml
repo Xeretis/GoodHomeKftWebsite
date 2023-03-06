@@ -28,7 +28,7 @@ dependencies:
   svelte-inview: 3.0.4_svelte@3.55.1
 
 devDependencies:
-  '@sveltejs/adapter-vercel': 2.2.1_@sveltejs+kit@1.9.2
+  '@sveltejs/adapter-vercel': 2.3.0_@sveltejs+kit@1.9.2
   '@sveltejs/kit': 1.9.2_svelte@3.55.1+vite@4.1.4
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
   '@typescript-eslint/eslint-plugin': 5.54.0_6mj2wypvdnknez7kws2nfdgupi
@@ -329,8 +329,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-vercel/2.2.1_@sveltejs+kit@1.9.2:
-    resolution: {integrity: sha512-W8+qytNSvFTr56CC4RLC/PeSuzB8m/LnnZlZD3v23qlgRrHHcYyN5mZJHaZmQvQeqsue7rby+LKfqqZiElstlg==}
+  /@sveltejs/adapter-vercel/2.3.0_@sveltejs+kit@1.9.2:
+    resolution: {integrity: sha512-LvSO/jO0rO2tFGNZhNtgzNniMobZmTXho83PouDgjKS3hW9CvIsn80RlRwT/Ay5Tag+kCHb0jViFuWktR9/OVw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
