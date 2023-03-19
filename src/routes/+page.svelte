@@ -4,7 +4,7 @@
     import { onMount } from "svelte";
     import { inview } from "svelte-inview";
     import Countup from "svelte-countup";
-    import handhakeImg from "$lib/assets/handshake.jpg";
+    import houseKeychainImg from "$lib/assets/houseKeyChain.jpg";
     import houseBlockImg from "$lib/assets/houseblock.jpg";
     import aboutimage from "$lib/assets/aboutimage.jpg";
     import SvgTitle from "$lib/components/svgTitle.svelte";
@@ -34,25 +34,25 @@
             <LinkButton href="#" text="Ügyfélkapu" />
         </div>
         <img
-            class="absolute w-96 h-64 bottom-8 sm:left-8 rounded-lg opacity-75 grayscale shortHidden"
-            src={handhakeImg}
-            transition:fly={{ duration: 2500, delay: 2200, y: 20 }}
-            alt="Két kéz, kézfogás közben"
-        />
-        <div
-            class="dottedBg absolute bottom-8 sm:bottom-12 sm:left-14 left-6 w-96 h-72 z-10 shortHidden"
-            transition:fade={{ duration: 2500, delay: 2200 }}
-        />
-        <img
-            class="absolute w-72 h-48 top-8 sm:right-8 rounded-lg opacity-80 brightness-[.75] grayscale shortHidden"
+            class="absolute w-96 h-64 bottom-8 sm:left-8 rounded-lg opacity-[.65] shortHidden "
             src={houseBlockImg}
             transition:fly={{ duration: 2500, delay: 2200, y: 20 }}
             alt="Egy társasház"
         />
-        <div
+        <!-- <div
+            class="dottedBg absolute bottom-8 sm:bottom-12 sm:left-14 left-6 w-96 h-72 z-10 shortHidden"
+            transition:fade={{ duration: 2500, delay: 2200 }}
+        /> -->
+        <img
+            class="absolute w-72 h-48 top-8 sm:right-8 rounded-lg opacity-[.65] shortHidden saturate-50"
+            src={houseKeychainImg}
+            transition:fly={{ duration: 2500, delay: 2200, y: 20 }}
+            alt="Egy ház alakú kulcstartó"
+        />
+        <!-- <div
             class="dottedBg absolute top-16 right-6 sm:right-20 w-72 h-48 z-10 shortHidden"
             transition:fade={{ duration: 2500, delay: 2200 }}
-        />
+        /> -->
         <div
             class="dottedBg absolute bottom-4 right-4 w-[448px] h-72 z-10 max-lg:hidden"
             transition:fade={{ duration: 2500, delay: 2200 }}
@@ -73,19 +73,19 @@
     }}
 >
     {#if aboutInView}
-        <div class="flex gap-6 m-4 w-3/4 max-md:flex-col" in:fade={{ duration: 3000, easing: sineInOut }}>
+        <div class="flex gap-6 m-4 w-3/4 max-md:flex-col mb-4" in:fade={{ duration: 3000, easing: sineInOut }}>
             <img src={aboutimage} alt="About us" class="w-64 h-96 rounded-lg max-md:hidden" />
             <div class="flex flex-col gap-4">
                 <h2 class="text-4xl underline decoration-blue-500 max-md:text-center">Rólunk</h2>
-                <p>
+                <p class="text-justify">
                     Molnár Katalin, társasházi közös képviselő a GOOD HOME Kft-t azzal a céllal hoztam létre, hogy
                     <b>Kecskeméten elhelyezkedő társasházak</b> részére minőségi szolgáltatást nyújtsunk. A
                     társasházkezelés területén eltöltött több, mint 20 évnyi tapasztalatom segítségével és a kiépített
-                    szakipari kapcsolatoknak köszönhetően próbálunk Önöknek olyan
-                    <b>magas színvonalú szolgáltatást nyújtani</b>, amellyel mind Ön és mind a többi tulajdonostársak
+                    szakipari kapcsolatoknak köszönhetően próbálunk önöknek olyan
+                    <b>magas színvonalú szolgáltatást nyújtani</b>, amellyel mind ön és mind a többi tulajdonostársak
                     teljes mértékben elégedettek lesznek.
                 </p>
-                <div class="flex gap-4 lg:mt-6 md:h-full md:items-center">
+                <div class="flex gap-4 mt-4 lg:mt-6 md:h-full md:items-center">
                     <div class="flex flex-1 flex-col p-2">
                         <div class="w-8 h-8 sm:w-12 sm:h-12 self-center">
                             <svg
@@ -139,11 +139,14 @@
                         <p class="p-2 text-center">
                             <span class="text-blue-500 font-bold">
                                 <Countup value={470} />+
-                            </span> elégedett lakó
+                            </span> elégedett tulajdonos
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div in:fade={{ duration: 3000, easing: sineInOut }}>
+            <LinkButton href="#contact" text="Elérhetőségek" />
         </div>
     {/if}
 </section>
