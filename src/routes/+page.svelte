@@ -74,7 +74,7 @@
 >
     {#if aboutInView}
         <div class="flex gap-6 m-4 w-3/4 max-md:flex-col mb-4" in:fade={{ duration: 3000, easing: sineInOut }}>
-            <img src={aboutimage} alt="About us" class="w-64 h-96 rounded-lg max-md:hidden" />
+            <img src={aboutimage} alt="Portré kép Molnár Katalinról" class="w-64 h-96 rounded-lg max-md:hidden" />
             <div class="flex flex-col gap-4">
                 <h2 class="text-4xl underline decoration-blue-500 max-md:text-center">Rólunk</h2>
                 <p class="text-justify">
