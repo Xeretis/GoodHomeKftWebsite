@@ -1,3 +1,3 @@
 # GoogHomeKftWebsite
 
-A GOODHOME KFT hivatalos weboldala.
+A GOOD HOME KFT hivatalos weboldala.
