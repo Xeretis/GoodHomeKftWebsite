@@ -27,7 +27,7 @@
             class="text-center pt-4 text-blue-500 max-sm:text-xs"
             transition:fly={{ duration: 3000, delay: 2200, y: 20 }}
         >
-            Közösképviselés és könyvelés már x éve Kecskeméten
+            Közösképviselés és könyvelés már 2000 óta Kecskeméten
         </p>
         <div class="flex gap-4 pt-4" transition:fly={{ duration: 2500, delay: 2200, y: 20 }}>
             <LinkButton href="#about" text="Rólunk" />
@@ -44,7 +44,7 @@
             transition:fade={{ duration: 2500, delay: 2200 }}
         />
         <img
-            class="absolute w-72 h-48 top-8 sm:right-8 rounded-lg opacity-80 brightness-[.65] grayscale shortHidden"
+            class="absolute w-72 h-48 top-8 sm:right-8 rounded-lg opacity-80 brightness-[.75] grayscale shortHidden"
             src={houseBlockImg}
             transition:fly={{ duration: 2500, delay: 2200, y: 20 }}
             alt="Egy társasház"
@@ -78,11 +78,12 @@
             <div class="flex flex-col gap-4">
                 <h2 class="text-4xl underline decoration-blue-500 max-md:text-center">Rólunk</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum dolores ab, modi
-                    possimus illo fugit, necessitatibus odit saepe, hic ad ducimus! In at praesentium repellendus minima
-                    quis aut delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis qui fugit
-                    necessitatibus voluptatibus repudiandae mollitia quos alias, non praesentium ipsa illo rem labore
-                    amet earum vel optio ut corporis!
+                    Molnár Katalin, társasházi közös képviselő a GOOD HOME Kft-t azzal a céllal hoztam létre, hogy
+                    <b>Kecskeméten elhelyezkedő társasházak</b> részére minőségi szolgáltatást nyújtsunk. A
+                    társasházkezelés területén eltöltött több, mint 20 évnyi tapasztalatom segítségével és a kiépített
+                    szakipari kapcsolatoknak köszönhetően próbálunk Önöknek olyan
+                    <b>magas színvonalú szolgáltatást nyújtani</b>, amellyel mind Ön és mind a többi tulajdonostársak
+                    teljes mértékben elégedettek lesznek.
                 </p>
                 <div class="flex gap-4 lg:mt-6 md:h-full md:items-center">
                     <div class="flex flex-1 flex-col p-2">
@@ -111,7 +112,7 @@
                         </div>
                         <p class="p-2 text-center">
                             <span class="text-blue-500 font-bold">
-                                <Countup value={30} />+
+                                <Countup value={10} />+
                             </span> társasház
                         </p>
                     </div>
@@ -137,7 +138,7 @@
                         </div>
                         <p class="p-2 text-center">
                             <span class="text-blue-500 font-bold">
-                                <Countup value={600} />+
+                                <Countup value={470} />+
                             </span> elégedett lakó
                         </p>
                     </div>
@@ -178,7 +179,8 @@
                     </svg>
                     <p class="font-medium">Email</p>
                 </div>
-                <a href="mailto:katticka@gmail.com" class="text-blue-500 underline truncate block">katticka@gmail.com</a
+                <a href="mailto:goodhome.kft@gmail.com" class="text-blue-500 underline truncate block"
+                    >goodhome.kft@gmail.com</a
                 >
             </div>
             <div class="flex justify-between p-4 mb-4 gap-2 bg-gray-50 shadow-sm rounded-md">
