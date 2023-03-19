@@ -31,7 +31,7 @@
         </p>
         <div class="flex gap-4 pt-4" transition:fly={{ duration: 2500, delay: 2200, y: 20 }}>
             <LinkButton href="#about" text="Rólunk" />
-            <LinkButton href="#" text="Ügyfélkapu" />
+            <LinkButton href="https://koltsegsql.info/goodhome/" text="Ügyfélkapu" />
         </div>
         <img
             class="absolute w-96 h-64 bottom-8 sm:left-8 rounded-lg opacity-[.65] shortHidden "
@@ -82,10 +82,10 @@
                     kezelésével, könyvelésével, amit biztosítási szolgáltatásokkal bővítettem ki 2023-ban. A <b>
                         GOOD HOME Kft
                     </b>-t azzal a céllal hoztam létre, hogy <b>Kecskeméten elhelyezkedő társasházak részére</b>
-                    minőségi szolgáltatást nyújtsunk. A társasházkezelés területén eltöltött több, mint 20 évnyi
-                    tapasztalatom segítségével és a kiépített szakipari kapcsolatoknak köszönhetően próbálunk Önöknek
-                    olyan m<b> agas színvonalú szolgáltatást nyújtani </b>, amellyel mind Ön és mind a többi
-                    tulajdonostársak teljes mértékben elégedettek lesznek.
+                    minőségi szolgáltatást nyújtsunk. A társasházkezelés területén eltöltött több, mint 20 évnyi tapasztalatom
+                    segítségével és a kiépített szakipari kapcsolatoknak köszönhetően próbálunk Önöknek olyan m<b>
+                        agas színvonalú szolgáltatást nyújtani
+                    </b>, amellyel mind Ön és mind a többi tulajdonostársak teljes mértékben elégedettek lesznek.
                 </p>
                 <div class="flex gap-4 mt-4 lg:mt-6 md:h-full md:items-center">
                     <div class="flex flex-1 flex-col p-2">
