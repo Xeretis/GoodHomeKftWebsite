@@ -78,12 +78,14 @@
             <div class="flex flex-col gap-4">
                 <h2 class="text-4xl underline decoration-blue-500 max-md:text-center">Rólunk</h2>
                 <p class="text-justify">
-                    Molnár Katalin, társasházi közös képviselő a GOOD HOME Kft-t azzal a céllal hoztam létre, hogy
-                    <b>Kecskeméten elhelyezkedő társasházak</b> részére minőségi szolgáltatást nyújtsunk. A
-                    társasházkezelés területén eltöltött több, mint 20 évnyi tapasztalatom segítségével és a kiépített
-                    szakipari kapcsolatoknak köszönhetően próbálunk önöknek olyan
-                    <b>magas színvonalú szolgáltatást nyújtani</b>, amellyel mind ön és mind a többi tulajdonostársak
-                    teljes mértékben elégedettek lesznek.
+                    Molnár Katalin vagyok, társasházi közös képviselőként 2000. óta foglalkozom épületek teljes körű
+                    kezelésével, könyvelésével, amit biztosítási szolgáltatásokkal bővítettem ki 2023-ban. A <b>
+                        GOOD HOME Kft
+                    </b>-t azzal a céllal hoztam létre, hogy <b>Kecskeméten elhelyezkedő társasházak részére</b>
+                    minőségi szolgáltatást nyújtsunk. A társasházkezelés területén eltöltött több, mint 20 évnyi
+                    tapasztalatom segítségével és a kiépített szakipari kapcsolatoknak köszönhetően próbálunk Önöknek
+                    olyan m<b> agas színvonalú szolgáltatást nyújtani </b>, amellyel mind Ön és mind a többi
+                    tulajdonostársak teljes mértékben elégedettek lesznek.
                 </p>
                 <div class="flex gap-4 mt-4 lg:mt-6 md:h-full md:items-center">
                     <div class="flex flex-1 flex-col p-2">
