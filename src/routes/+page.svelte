@@ -31,7 +31,7 @@
         </p>
         <div class="flex gap-4 pt-4" transition:fly={{ duration: 2500, delay: 2200, y: 20 }}>
             <LinkButton href="#about" text="Rólunk" />
-            <LinkButton href="https://koltsegsql.info/goodhome/" text="Ügyfélkapu" />
+            <LinkButton href="https://koltsegsql.info/goodhome/" rel="noreferrer" text="Ügyfélkapu" />
         </div>
         <img
             class="absolute w-96 h-64 bottom-8 sm:left-8 rounded-lg opacity-[.65] shortHidden "

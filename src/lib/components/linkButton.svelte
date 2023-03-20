@@ -1,9 +1,10 @@
 <script lang="ts">
     export let href: string;
     export let text: string;
+    export let rel: string | undefined = undefined;
 </script>
 
-<a {href} class="relative inline-block text-lg group">
+<a {href} class="relative inline-block text-lg group" {rel}>
     <span
         class="relative z-10 block px-3 py-2 sm:px-5 sm:py-3 overflow-hidden leading-tight text-blue-500 transition-colors duration-300 ease-out border-[1px] sm:border-2 border-blue-500 rounded-lg group-hover:text-white"
     >
