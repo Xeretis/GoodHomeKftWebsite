@@ -7,6 +7,7 @@
     import houseKeychainImg from "$lib/assets/houseKeyChain.jpg";
     import houseBlockImg from "$lib/assets/houseblock.jpg";
     import aboutimage from "$lib/assets/aboutimage.jpg";
+    import kedvezmenyezettiInfoblokk from "$lib/assets/kedvezmenyezetti-infoblokk-keretes.jpg";
     import SvgTitle from "$lib/components/svgTitle.svelte";
     import LinkButton from "$lib/components/linkButton.svelte";
 
@@ -19,6 +20,21 @@
     let aboutInView;
     let contactInView;
 </script>
+
+<!-- EU Compliance Fixed Banner - OUTSIDE all conditionals, IMMEDIATELY ACCESSIBLE -->
+<a
+    href="/eu-projekt-adatok"
+    data-sveltekit-reload
+    class="fixed left-4 bottom-4 z-[9999] min-h-[100px] hover:opacity-90 transition-opacity"
+    aria-label="EU Projekt Adatok - Kedvezményezetti Információblock"
+    style="opacity: 1 !important; pointer-events: auto;"
+>
+    <img
+        src={kedvezmenyezettiInfoblokk}
+        alt="Kedvezményezetti Infoblokk - EU Támogatás"
+        class="rounded shadow-lg max-w-[300px]"
+    />
+</a>
 
 <section class="flex justify-center items-center flex-col h-screen relative" id="landing" role="banner">
     {#if drawLanding}
@@ -34,25 +50,18 @@
             <LinkButton href="https://koltsegsql.info/goodhome/" rel="noreferrer" text="Ügyfélkapu" />
         </div>
         <img
-            class="absolute w-96 h-64 bottom-8 sm:left-8 rounded-lg opacity-[.65] shortHidden "
+            class="absolute w-96 h-64 bottom-8 sm:left-8 rounded-lg opacity-[.65] shortHidden"
             src={houseBlockImg}
             transition:fly={{ duration: 2500, delay: 2200, y: 20 }}
             alt="Egy társasház"
         />
-        <!-- <div
-            class="dottedBg absolute bottom-8 sm:bottom-12 sm:left-14 left-6 w-96 h-72 z-10 shortHidden"
-            transition:fade={{ duration: 2500, delay: 2200 }}
-        /> -->
         <img
             class="absolute w-72 h-48 top-8 sm:right-8 rounded-lg opacity-[.65] shortHidden saturate-50"
             src={houseKeychainImg}
             transition:fly={{ duration: 2500, delay: 2200, y: 20 }}
             alt="Egy ház alakú kulcstartó"
         />
-        <!-- <div
-            class="dottedBg absolute top-16 right-6 sm:right-20 w-72 h-48 z-10 shortHidden"
-            transition:fade={{ duration: 2500, delay: 2200 }}
-        /> -->
+
         <div
             class="dottedBg absolute bottom-4 right-4 w-[448px] h-72 z-10 max-lg:hidden"
             transition:fade={{ duration: 2500, delay: 2200 }}
