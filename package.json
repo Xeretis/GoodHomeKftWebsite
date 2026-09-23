@@ -10,8 +10,11 @@
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "eslint ."
     },
+    "engines": {
+        "node": ">=20.0.0"
+    },
     "devDependencies": {
-        "@sveltejs/adapter-vercel": "^2.2.1",
+        "@sveltejs/adapter-vercel": "^3.1.0",
         "@sveltejs/kit": "^1.9.2",
         "@tailwindcss/typography": "^0.5.9",
         "@typescript-eslint/eslint-plugin": "^5.54.0",
@@ -31,7 +34,6 @@
     "dependencies": {
         "@sveltejs/amp": "^1.0.2",
         "@vercel/analytics": "^0.1.11",
-        "pnpm": "^12.5.1",
         "svelte-countup": "^0.2.6",
         "svelte-inview": "^3.0.4"
     }
