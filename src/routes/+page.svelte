@@ -32,7 +32,7 @@
     <img
         src={kedvezmenyezettiInfoblokk}
         alt="Kedvezményezetti Infoblokk - EU Támogatás"
-        class="rounded shadow-lg max-w-[300px]"
+        class="rounded shadow-lg max-w-[350px]"
     />
 </a>
 
